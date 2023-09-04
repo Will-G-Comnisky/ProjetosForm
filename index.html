@@ -6,31 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+<style>
+    .formulario {
+        display: block;
+    }
+</style>
 <body>
-    <form action="">
-        <label for="name">Nome:</label>
-        <input value="" name="name" id="name" type="text" placeholder="Seu nome completo">
+    <form class="formulario" action="">
+        <label for="name"></label>
+        <input class="formulario" value="" name="name" id="name" type="text" placeholder="Seu nome completo" required>
         <br>
         <br>
-        <label for="e-mail">E-mail:</label>
-        <input value="" name="e-mail" id="e-mail" type="email" placeholder="Seu melhor e-mail">
+        <label for="e-mail"></label>
+        <input class="formulario" value="" name="e-mail" id="e-mail" type="email" placeholder="Seu melhor e-mail" required>
         <br>
         <br>
-        <label for="company">Empresa/Organização:</label>
-        <input value="" type="text" name="company" id="company" placeholder="Sua empresa">
+        <label for="company"></label>
+        <input class="formulario" value="" type="text" name="company" id="company" placeholder="Sua empresa">
         <br>
         <br>
-        <label for="tel">Teleofne:</label>
-        <input value="" type="tel" name="tel" id="tel" placeholder="(000) 9 XXXX-XXXX">
+        <label for="tel"></label>
+        <input class="formulario" value="" type="tel" name="tel" id="tel" placeholder="(000) 9 XXXX-XXXX">
         <br>
         <br>
-        <label for="message">Mensagem:</label>
-        <textarea value="" name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem para nós!"></textarea>
+        <input list="motivos" name="motivos" id="idmotivo" placeholder="Motivo do contato">
+            <datalist id="motivos">
+                <option value="Elogio">
+                <option value="Problema com produto">
+                <option value="Reclamação">
+                <option value="Sugestão">
+                <option value="Outro">
+            </datalist>
+        <br>
+        <br>
+        <label for="message"></label>
+        <textarea class="formulario" value="" name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem para nós!" required></textarea>
         <br>
         <br>
         <button type="submit" > Enviar </button>
-        <button type="reset"> Limpar </button>
-        <button type="button"> Testar </button>
 
 
     </form>
