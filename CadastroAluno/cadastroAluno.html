@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        max-height: 100vh;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    label, legend {
+        margin: 16px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 16px; 
+        width: 400px; 
+    }
+
+    #dataNascimento {
+        display: flex;
+        margin: 8px 16px;
+        padding: 8px;
+        width: 160px;
+        text-align: center;
+    }
+
+    #idFem, #idMasc {
+        margin: 8px 16px;
+    }
+    
+    fieldset {
+        padding: 10px;
+    }
+
+    textarea {
+        resize: none;
+    }
+    .btn-container button {
+        margin: 0px 8px 16px; 
+        padding: 8px 16px; 
+    }
+
+</style>
+
+<body>
+
+    <main>
+        <div class="cadastro">
+            <form class="formulario" action="">
+                <fieldset>
+                    <legend>Cadastro de Aluno</legend>
+
+                    <label for="name">Nome</label>
+                    <input class="formulario" value="" name="name" id="name" type="text" required>
+
+                    <label for="lastName">Sobrenome</label>
+                    <input class="formulario" value="" name="lastName" id="lastName" type="text" required>
+
+                    <label for="dataNascimento">Data de Nascimento </label>
+
+                    <input type="date" id="dataNascimento" name="dataNascimento" min="2000-01-01" max="2017-12-31" required>
+
+
+                    <label for="adress">Endereço</label>
+                    <input class="formulario" value="" type="text" name="adress" id="adress">
+
+                    <label for="momName">Nome da Mãe</label>
+                    <input class="formulario" value="" name="momName" id="momName" type="text">
+
+                    <label for="dadName">Nome do Pai</label>
+                    <input class="formulario" value="" name="dadName" id="dadName" type="text">
+
+                    <label for="e-mail">E-mail</label>
+                    <input class="formulario" value="" name="e-mail" id="e-mail" type="email" required>
+
+                    <label for="tel">Tel. </label>
+                    <input class="formulario" value="" type="tel" name="tel" id="tel">
+
+                    <label for="serie">Série </label>
+                    <input class="formulario" value="" type="number" name="serie" id="serie" min="1" max="9" step="1" inputmode="numeric">
+
+                    <label for="sexo">Sexo</label>
+                    <br>
+                    <input type="radio" name="nmGenero" id="idFem" checked>
+                    <label for="idFem">Feminino</label>
+                    <br>
+                    <input type="radio" name="nmGenero" id="idMasc">
+                    <label for="idFmasc">Masculino</label>
+
+                    <br>
+                    <br>
+                    <label for="message"></label>
+                    <textarea class="formulario" value="" name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem para nós!" required></textarea>
+                    <br>
+                    <br>
+                    <div class="btn-container">
+                        <button type="submit">Salvar</button>  
+                        <button type="reset">Limpar Tela</button>   
+                    </div>   
+                </fieldset>  
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
