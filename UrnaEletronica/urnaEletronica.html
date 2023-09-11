@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        margin: 64px auto;
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-color: rgb(124, 125, 158);
+        align-items: center;
+    }
+    .candidato {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #candidato_img {
+        max-width: 600px;
+        max-height: 400px;
+    }
+    h2 {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    input {
+        margin: 10px;
+        padding: 10px;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        margin-right: 4px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Urna Eletrônica Entra21</h1>
+    </header>
+    <main>
+        <div class="candidato">
+            <img id="candidato_img" src="https://servidor-estaticos-mod20ebac.vercel.app/man_blog_post.jpg" alt="Candidato com chapéu e jaqueta bege">
+            <h2>Fulano de tal</h2>
+            <input type="number" name="nr-candidato" id="nr-candidato" placeholder="Número do Candidato" required>
+            <div class="buttons">
+                <button type="submit" > Confirmar </button>
+                <button type="reset" > Cancelar </button>
+                <button type="button" > Branco </button>
+            </div>
+        </div>
+    
+    </main>
+    
+</body>
+</html>
