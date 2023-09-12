@@ -15,13 +15,16 @@
     }
 
     body {
-        max-height: 100vh;
-        max-width: 100vw;
+        max-width: 800px[];
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
+    }
+
+    .cadastro {
+        margin: 32px;
     }
 
     label, legend {
@@ -46,9 +49,13 @@
     #idFem, #idMasc {
         margin: 8px 16px;
     }
+    .necessidadesEsp {
+        margin-left: 16px;
+    }
     
     fieldset {
         padding: 10px;
+        margin: 0 auto;
     }
 
     textarea {
@@ -99,12 +106,45 @@
                     <input class="formulario" value="" type="number" name="serie" id="serie" min="1" max="9" step="1" inputmode="numeric">
 
                     <label for="sexo">Sexo</label>
+
                     <br>
+
                     <input type="radio" name="nmGenero" id="idFem" checked>
                     <label for="idFem">Feminino</label>
+
                     <br>
+
                     <input type="radio" name="nmGenero" id="idMasc">
                     <label for="idFmasc">Masculino</label>
+
+                    <br>
+                    <br>
+                    <label for="necessidades">Necessidades Especiais</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="necessidade1" class="necessidadesEsp" name="necessidade1" value="necessidade1">
+                    <label for="necessidade1"> Deficiência Auditiva</label>
+                    <br>
+                    <input type="checkbox" id="necessidade2" class="necessidadesEsp" name="necessidade2" value="necessidade1">
+                    <label for="necessidade2"> Deficiência Motora</label>
+                    <br>
+                    <input type="checkbox" id="necessidade3" class="necessidadesEsp" name="necessidade3" value="necessidade3">
+                    <label for="necessidade3"> Deficiência Visual</label>
+                    <br>
+                    <input type="checkbox" id="necessidade4" class="necessidadesEsp" name="necessidade4" value="necessidade4">
+                    <label for="necessidade4"> Paralisia Cerebral</label>  
+                    <br>
+                    <input type="checkbox" id="necessidade5" class="necessidadesEsp" name="necessidade5" value="necessidade5">
+                    <label for="necessidade5"> Pertubação de Espectro Autista</label>  
+                    <br>
+                    <input type="checkbox" id="necessidade6" class="necessidadesEsp" name="necessidade6" value="necessidade6">
+                    <label for="necessidade6"> Pertubação de Foro Psicológico</label>  
+                    <br>
+                    <input type="checkbox" id="necessidade7" class="necessidadesEsp" name="necessidade7" value="necessidade7">
+                    <label for="necessidade7"> Pertubação de Aprendizagem</label>  
+                    <br>
+                    <input type="checkbox" id="necessidade8" class="necessidadesEsp" name="necessidade8" value="necessidade8">
+                    <label for="necessidade8"> Altas Habilidades</label>                   
 
                     <br>
                     <br>
